@@ -23,7 +23,9 @@ const OBJECT = 'object';
 //I have created a basic function to avoid use the typeof many times.
 const matchType = (data,type) => typeof data===type;
 
-//SIMPLE VARIABLE TYPES VALIDATION.
+/*
+  How to use assert with typeof througt matchType function?
+*/
 
 //NUMBER - ok
 assert(matchType(money,NUMBER),'Bad number format');
@@ -55,8 +57,10 @@ assert(matchType(dog,OBJECT),'Bad object format');
 //OBJECT - error
 assert(matchType(name,OBJECT),'Bad object format');
 
+/*
+  How to validate function type parameters into a function?
+*/
 
-//FUNCTION PARAMETERS VALIDATION - on function start
 const newLoan = (accountId,name,surname,email,ammount) =>{
 
   console.log(accountId,name,surname,email,ammount);
@@ -79,7 +83,9 @@ newLoan(10011,'Damian','Cipolat','damian.cipolat@gmail.com',200000);
 //Function call with errors
 newLoan(10011,'Damian','Cipolat','damian.cipolat@gmail.com','2222222');
 
-//FUNCTION VARIABLES validation - on function running.
+/*
+  How to validate type variable in the middle of a function?
+*/
 const newLoan2 = (accountId,name,surname,email,ammount) =>{
 
   const formId = accountId+10;
