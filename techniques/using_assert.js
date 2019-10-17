@@ -1,6 +1,10 @@
-const assert = require('assert');
+/*
+  Objetive: 
+  Validate data type using assert and typeof in a single js script,
+  we don't use any framework or lib all 100% vanilla js.
+*/
 
-//Validate data type using assert and typeof
+const assert = require('assert');
 
 //Define some values.
 const money = 100.20;
@@ -9,17 +13,17 @@ const today = new Date();
 const apply = true;
 const dog   = {name:'damian',surname:'cipolat'};
 
-//Define datatype constants, to basic js types.
+//Define datatype constants, to basic js primitive types.
 const NUMBER = 'number';
 const STRING = 'string';
 const DATE   = 'date';
 const BOOL   = 'boolean';
 const OBJECT = 'object';
 
-//I create a basic function to avoid use the typeof many times.
+//I have created a basic function to avoid use the typeof many times.
 const matchType = (data,type) => typeof data===type;
 
-//SIMPLE VARIABLE TYPES VALIDATION
+//SIMPLE VARIABLE TYPES VALIDATION.
 
 //NUMBER - ok
 assert(matchType(money,NUMBER),'Bad number format');
