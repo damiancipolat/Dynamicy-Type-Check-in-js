@@ -8,7 +8,7 @@ Dynamic type checking is the process of verifying the type safety of a program a
 
 I am going to show you **three** different ways of how to do this, some are simpler than others but you will surely understand all of them.
 
-### Assert + Typeof
+### 1) Assert + Typeof
 We will use the typeof function and the nodejs native module ASSERT(https://nodejs.org/api/assert.html).
 
 The idea is to use typeof to validate the content of a variable's primitives vs a parameter that is the type with which we are going to compare. We will use ASSERT to generate an exception that interrupts the normal flow of execution in the scope where the script is executed.
