@@ -107,10 +107,10 @@ newTest('Damian');
 
 A higher order function is a function that takes a function as an argument, or returns a function . Higher order function is in contrast to first order functions, which don't take a function as an argument or return a function as output
 
-```js
-const assert = require('assert');
+This is an example:
 
-//Declare our custom type enum with his custom type validators, this could be extended if you want.
+```js
+//TYPE ENUMERATOR.
 const types = {
   NUMBER: (data)=>(typeof data)==='number'&&!isNaN(data),
   STRING: (data)=>(typeof data)==='string',
@@ -119,22 +119,43 @@ const types = {
   OBJECT: (data)=>(typeof data)==='object'
 };
 
-//This function handle the variable assignation if this is succed return the value if fail throw exception.
-const matchType = (value,validator)=>validator(value)?value:assert(false,'INVALID TYPE ASSIGNATION');
+//Parameter type validator.
+const validate = (types,args)=>{
 
-/*
-  How to use this in a function?
-*/
-const calcSalary = (baseValue, extraHsValue, workedHs,extraHs)=>{
+  if (types.length!=args.length)
+    throw new Error('Type array and parameter length dont match');
 
-  const salary = matchType(baseValue*workedHs,types.NUMBER);
-  const extras = matchType(extraHsValue*extraHs,types.NUMBER);
-  const total  = salary+extras;
+  const matchAll = types.every((typeFn,i)=>typeFn(args[i]));
 
-  return total;
+  if (!matchAll)
+    throw new Error('Error in parameter validation',args,Object.keys(types));
+
+  return true;
 
 }
 
-console.log('TEST 1 calc with rigth values, result:',calcSalary(100,150,300,50));
+//Decorator function receive a type list and a function to process.
+const decorate = (types) => (fn)=>(...args)=>{
+
+  validate(types,args);  
+  return fn(...args);
+
+}
+
+//TEST
+
+//Business logic function.
+const calculateTaxes = (baseAmmount,workedHs,extraHs) => (baseAmmount*workedHs)+((extraHs/2)*baseAmmount);
+
+//Decorate business function with a dynamic type check LAYER.
+const typedTaxesFn = decorate([
+  types.NUMBER,
+  types.NUMBER,
+  types.NUMBER
+])(calculateTaxes);
+
+//Execute the function using the new layers.
+console.log('TAXES',typedTaxesFn(1000,20,10));
 ```
-The example continue in this file https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/techniques/check_vars.js
+
+The example continue in this file https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/techniques/function_decorator.js
