@@ -164,3 +164,10 @@ console.log('TAXES',typedTaxesFn(1000,20,10));
 ```
 
 The example continue in this file https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/techniques/function_decorator.js
+
+## BONUS:
+The typedef function is very limited, I have founded a way of how to create a better typedef function, this is the code:
+
+```js
+const typeOfB = (value)=>Object.prototype.toString.call(value).split("]")[0].split(" ")[1].toLowerCase();
+```
