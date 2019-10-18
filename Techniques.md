@@ -171,3 +171,28 @@ The typedef function is very limited, I have founded a way of how to create a be
 ```js
 const typeOfB = (value)=>Object.prototype.toString.call(value).split("]")[0].split(" ")[1].toLowerCase();
 ```
+
+Using "typeOfB", please take a look in response using an array, undefined and null types.
+
+```js
+typeOfB(true);
+"boolean"
+typeOfB(1);
+"number"
+typeOfB(100.22);
+"number"
+typeOfB("Hello");
+"string"
+typeOfB(new Date());
+"date"
+typeOfB([1,2,3,4]);
+"array"
+typeOfB({name:'Damian',age:32});
+"object"
+typeOfB(undefined);
+"undefined"
+typeOfB(null);
+"null"
+```
+
+
