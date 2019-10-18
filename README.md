@@ -8,4 +8,4 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 
 #### I'm going to focus on two npm modules:
 - Type-check: https://www.npmjs.com/package/type-check
-- Type-check: https://www.npmjs.com/package/type-check
+- Fish-type: https://www.npmjs.com/package/fish-type-js (my own NPM custom module XD).
