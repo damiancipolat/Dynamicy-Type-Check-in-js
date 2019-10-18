@@ -12,7 +12,7 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 
 Go to the next link to see how to use it using [npm modules].
 
-[with npm]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[npm modules]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
 
 #### Using only JS:
 Go to the next link to see 3 differents way to handle type check using [only js].
