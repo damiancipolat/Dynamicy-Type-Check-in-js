@@ -1,7 +1,7 @@
 /*
-  Objetive: 
-  Create a single and common function into a script, but using a js wrapper function to control
-  data types in the variable assigned in the code.
+  Objetive:   
+    Create a single and common function into a script, but using a js wrapper function to control
+    data types in the variable assigned in the code.
 */
 
 const assert = require('assert');

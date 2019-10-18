@@ -1,7 +1,7 @@
 /*
-  Objetive: 
-  Validate data type using assert and typeof in a single js script,
-  we don't use any framework or lib all 100% vanilla js.
+  Objetive:
+    Validate data type using assert and typeof in a single js script,
+    we don't use any framework or lib all 100% vanilla js.
 */
 
 const assert = require('assert');
