@@ -1,4 +1,4 @@
-<img src="https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/doc/js-logo.png?raw=true" width="180px" align="right" />
+<img src="https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/doc/js-logo.png?raw=true" width="100px" align="right" />
 
 # Dynamic type check techniques
 In this file I show several ways to do dynamic type check only using Javascript.
