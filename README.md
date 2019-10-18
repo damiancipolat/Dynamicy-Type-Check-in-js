@@ -18,3 +18,6 @@ Go to the next link to see how to use it using [npm modules].
 Go to the next link to see 3 differents techniques to handle type check using [only js].
 
 [only js]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
+
+#### Real example:
+I will provide a ready to use api rest using expressjs, of how to integrate the module type-check and some techniques to create a project that use dinamyc check, creating a type validation layer.
