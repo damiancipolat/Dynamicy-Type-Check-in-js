@@ -15,6 +15,6 @@ Go to the next link to see how to use it using [npm modules].
 [npm modules]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
 
 #### Using only JS:
-Go to the next link to see 3 differents way to handle type check using [only js].
+Go to the next link to see 3 differents techniques to handle type check using [only js].
 
 [only js]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
