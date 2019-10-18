@@ -1,4 +1,4 @@
-# Dynamic type validation techniques
+# Dynamic type check techniques
 In this file I show several ways to do dynamic type check only using Javascript.
 
 #### What is Dynamic type checking?
