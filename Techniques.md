@@ -6,4 +6,30 @@ Dynamic type checking is the process of verifying the type safety of a program a
 
 - So we know that in JS don't exists Type checking, and make STATIC type check maybe is'nt the best idea.
 
-I am going to show you three different ways of how to do this, some are simpler than others but you will surely understand all of them.
+I am going to show you **three** different ways of how to do this, some are simpler than others but you will surely understand all of them.
+
+### Assert + Typeof
+We will use the typeof function and the nodejs native module ASSERT(https://nodejs.org/api/assert.html).
+
+The idea is to use typeof to validate the content of a variable's primitives vs a parameter that is the type with which we are going to compare. We will use ASSERT to generate an exception that interrupts the normal flow of execution in the scope where the script is executed.
+
+```js
+//Include assert.
+const assert = require('assert');
+
+//Define datatype constants, to basic js primitive types.
+const NUMBER = 'number';
+const STRING = 'string';
+const DATE   = 'date';
+const BOOL   = 'boolean';
+const OBJECT = 'object';
+
+//I have created a basic function to avoid use the typeof many times.
+const matchType = (data,type) => typeof data===type;
+
+//NUMBER - success
+assert(matchType(money,NUMBER),'Bad number format');
+
+//NUMBER - throw exception
+assert(matchType(name,NUMBER),'Bad number format');
+```
