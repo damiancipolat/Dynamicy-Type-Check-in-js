@@ -6,7 +6,6 @@ Well, I build this repository, because I consider it necessary to give my opinio
 
 There are basically two approaches, using "npm" modules or using the JS "typeof" native function.
 
-- I'm going to focus on two npm modules:
-
+#### I'm going to focus on two npm modules:
 Type-check: https://www.npmjs.com/package/type-check
 Type-check: https://www.npmjs.com/package/type-check
