@@ -79,7 +79,12 @@ The idea here is to mix point 1 and 2 in a function decorator, which dynamically
 
 In this case I aim to create a security layer for existing functions, in which we can ensure that at the time of execution, the type check is first performed and if it fails not to continue with the execution.
 
+**What is a decorator? OOP definition**
+
+In object-oriented programming, the decorator pattern is a design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class. Ok but Js is not OOP, so we have to adapt this concept in something similar.
+
 **How to decorate a function?**
+
 With something like that:
 
 ```js
