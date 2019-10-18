@@ -33,3 +33,4 @@ assert(matchType(money,NUMBER),'Bad number format');
 //NUMBER - throw exception
 assert(matchType(name,NUMBER),'Bad number format');
 ```
+The example continue in this file https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/techniques/using_assert.js
