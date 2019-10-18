@@ -10,7 +10,7 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 - Type-check: https://www.npmjs.com/package/type-check
 - Fish-type: https://www.npmjs.com/package/fish-type-js my own NPM custom module :P
 
-Go to the next link to see how to use this modules.
+Go to the next link to see how to use this modules https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
 
 #### Using only JS:
 - Go to the next link to see 3 differents way to handle type check
