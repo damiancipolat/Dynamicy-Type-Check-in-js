@@ -59,7 +59,7 @@ const types = {
 const matchType = (value,validator)=>validator(value)?value:assert(false,'INVALID TYPE ASSIGNATION');
 
 /*
-  How to use this in a function??
+  How to use this in a function?
 */
 const calcSalary = (baseValue, extraHsValue, workedHs,extraHs)=>{
 
