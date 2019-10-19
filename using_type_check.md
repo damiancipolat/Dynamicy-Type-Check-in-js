@@ -3,12 +3,12 @@
 # Use type-check
 In this file I will show you how to use this module to make type check, but using a third party code.
 
-### What is type-check?
+## What is type-check?
 type-check is a library which allows you to check the types of JavaScript values at runtime with a Haskell like type syntax. It is great for checking external input, for testing, or even for adding a bit of safety to your internal code. It is a major component of levn.
 
 Download it in: https://www.npmjs.com/package/type-check
 
-### How to use?
+## How to use?
 In the npm page is very good explained, a single summary could be:
 
 ```js
