@@ -42,3 +42,27 @@ typeCheck('(String, Number)', ['str', 2, 5]);    // false
 
 ### How to mix in our code?
 It's easy goto the file https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/typecheck-lib/index.js and take a look of the source code.
+
+```js
+// Basic types:
+const typeCheck = require('type-check').typeCheck;
+const assert    = require('assert');
+
+//1) VALIDATE TYPE PARAMETERS BEFORE START THE FUNCTION.
+
+//Using some asserts.
+const requestLoan = (name,surname,age,ammount,email,phone)=>{
+
+  assert(typeCheck('String', name));
+  assert(typeCheck('String', name));
+  assert(typeCheck('String', surname));
+  assert(typeCheck('Number', age));
+  assert(typeCheck('Number', ammount));
+  assert(typeCheck('String', email));
+  assert(typeCheck('String', phone));
+
+  //Do something....
+  console.log('11111111111111111111');
+
+}
+```
