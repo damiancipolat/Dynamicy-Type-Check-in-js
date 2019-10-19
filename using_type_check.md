@@ -1,10 +1,12 @@
 <img src="https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/doc/js-logo.png?raw=true" width="100px" align="right" />
 
-# Using NPM modules.
-In this file I show several ways to do dynamic type check only using Javascript.
+# Use type-check
+In this file I will show you how to use this module to make type check, but using a third party code.
 
-#### What is Dynamic type checking?
-Dynamic type checking is the process of verifying the type safety of a program at runtime. Implementations of dynamically type-checked languages generally associate each runtime object with a type tag (i.e., a reference to a type) containing its type information.
+#### What is type-check?
+type-check is a library which allows you to check the types of JavaScript values at runtime with a Haskell like type syntax. It is great for checking external input, for testing, or even for adding a bit of safety to your internal code. It is a major component of levn.
+
+Download it in: https://www.npmjs.com/package/type-check
 
 - So we know that in JS don't exists Type checking, and make STATIC type check maybe is'nt the best idea.
 
