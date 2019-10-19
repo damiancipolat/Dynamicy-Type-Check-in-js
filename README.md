@@ -6,13 +6,14 @@ Well, I build this repository, because I consider it necessary to give my opinio
 
 There are basically two approaches, using "npm" modules or using the JS "typeof" native function.
 
-#### Using NPM modules:
-- Type-check: https://www.npmjs.com/package/type-check
-- Fish-type: https://www.npmjs.com/package/fish-type-js my own NPM custom module :P
+#### Using some famous npm module and my own module:
+- Using [Type-check]
+- Using [Fish-type] by me :p
+- Using [Joi]
 
-Go to the next link to see how to use it using [npm modules].
-
-[npm modules]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[Type-check]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[Fish-type]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[joi]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
 
 #### Using only JS:
 Go to the next link to see 3 differents techniques to handle type check using [only js].
