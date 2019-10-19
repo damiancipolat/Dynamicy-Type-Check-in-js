@@ -8,6 +8,34 @@ type-check is a library which allows you to check the types of JavaScript values
 
 Download it in: https://www.npmjs.com/package/type-check
 
-- So we know that in JS don't exists Type checking, and make STATIC type check maybe is'nt the best idea.
+#### How to use?
+In the npm page is very good explained, a single summary could be:
 
-I am going to show you **three** different ways of how to do this, some are simpler than others but you will surely understand all of them.
+```js
+// Basic types:
+const typeCheck = require('type-check').typeCheck;
+
+typeCheck('Number', 1);               // true
+typeCheck('Number', 'str');           // false
+typeCheck('Error', new Error);        // true
+typeCheck('Undefined', undefined);    // true
+ 
+// Comment
+typeCheck('count::Number', 1);        // true
+ 
+// One type OR another type:
+typeCheck('Number | String', 2);      // true
+typeCheck('Number | String', 'str');  // true
+ 
+// Wildcard, matches all types:
+typeCheck('*', 2) // true
+ 
+// Array, all elements of a single type:
+typeCheck('[Number]', [1, 2, 3]);                // true
+typeCheck('[Number]', [1, 'str', 3]);            // false
+ 
+// Tuples, or fixed length arrays with elements of different types:
+typeCheck('(String, Number)', ['str', 2]);       // true
+typeCheck('(String, Number)', ['str']);          // false
+typeCheck('(String, Number)', ['str', 2, 5]);    // false
+```
