@@ -39,3 +39,6 @@ typeCheck('(String, Number)', ['str', 2]);       // true
 typeCheck('(String, Number)', ['str']);          // false
 typeCheck('(String, Number)', ['str', 2, 5]);    // false
 ```
+
+### How to mix in our code?
+It's easy goto the file https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/typecheck-lib/index.js and take a look of the source code.
