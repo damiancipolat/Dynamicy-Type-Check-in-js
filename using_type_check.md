@@ -39,5 +39,3 @@ typeCheck('(String, Number)', ['str', 2]);       // true
 typeCheck('(String, Number)', ['str']);          // false
 typeCheck('(String, Number)', ['str', 2, 5]);    // false
 ```
-
-### How to mix it with some of my techniques?
