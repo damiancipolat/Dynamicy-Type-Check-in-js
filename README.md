@@ -11,7 +11,7 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 - Using [Fish-type] by me :p
 - Using [Joi]
 
-[Type-check]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[Type-check]:https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/using_type_check.md
 [Fish-type]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
 [joi]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
 
