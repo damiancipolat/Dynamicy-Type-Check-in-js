@@ -21,8 +21,8 @@ Go to the next link to see 3 differents techniques to handle type check using [o
 [only js]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
 
 #### My custom parser type module:
-Go to this link to see my last experiments, a function that decorate another function adding a 
+Go to this [link] to see my last experiments, a function that decorate another function adding a 
 type validation layer before run the function. The code use a special method of name the variables in
 a function.
 
-[link]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
+[link]:https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/custom.md
