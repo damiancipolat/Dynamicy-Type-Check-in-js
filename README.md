@@ -15,7 +15,7 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 [Fish-type]:https://www.npmjs.com/package/fish-type-js
 [joi]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/using_joi.md
 
-#### Using only JS:
+#### Using only pure JS:
 Go to the next link to see 3 differents techniques to handle type check using [only js].
 
 [only js]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
