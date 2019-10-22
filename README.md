@@ -12,7 +12,7 @@ There are basically two approaches, using "npm" modules or using the JS "typeof"
 - Using [Joi]
 
 [Type-check]:https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/using_type_check.md
-[Fish-type]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/UsingLibs.md
+[Fish-type]:https://www.npmjs.com/package/fish-type-js
 [joi]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/using_joi.md
 
 #### Using only JS:
