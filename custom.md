@@ -48,7 +48,7 @@ findDateT('Damian',31,true);    //ok
 findDateT('Damian',31,false);   //ok
 findDateT(222222,31,'DDDD');    //error
 ```
-To see the module source code, you and take a look at this file:xxxxxxxxx
+To see the module source code, you and take a look at this file: https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/function_parser/functionT.js
 
 ### EXTEND type system.
 This is a work in progress, i will continue improving this module, if you want you can extend the type enumerator with
