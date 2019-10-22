@@ -53,10 +53,10 @@ To see the module source code, you and take a look at this file: https://github.
 The idea of this code is to create a function parameters parse to make an automatic type check in runtime. The code use the "variable_name" to detect the data type.
 
 Example:
-- **str_**name: validate a string.
-- **int_**age: validate a integer.
-- **bool_**married: validate a boolean.
-- **date_**birthdate: validate a js date.
+- str_name: validate a string, prefix "str_".
+- int_age: validate a integer, prefix "int_".
+- bool_married: validate a boolean, prefix "bool_".
+- date_birthdate: validate a js date, prefix "date_".
   
   Code:
     function test(str_name,int_age,bool_married,date_birthdate){
