@@ -20,5 +20,9 @@ Go to the next link to see 3 differents techniques to handle type check using [o
 
 [only js]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
 
-#### Real example:
-I will provide a ready to use api rest using expressjs, of how to integrate the module type-check and some techniques to create a project that use dinamyc check, creating a type validation layer.
+#### My custom parser type module:
+Go to this link to see my last experiments, a function that decorate another function adding a 
+type validation layer before run the function. The code use a special method of name the variables in
+a function.
+
+[link]:https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/Techniques.md
