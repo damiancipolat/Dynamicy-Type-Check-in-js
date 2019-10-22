@@ -1,24 +1,3 @@
-<img src="https://github.com/damiancipolat/dynamicy-type-check-in-js/blob/master/doc/js-logo.png?raw=true" width="100px" align="right" />
-
-# Use Joi
-In this file I will show you how to use this module to make type check, but using a third party code.
-
-### What is Joi?
-The most powerful schema description language and data validator for JavaScript.
-joi is part of the hapi ecosystem and was designed to work seamlessly with the hapi web framework and its other components (but works great on its own or with other frameworks).
-
-Download it in: https://www.npmjs.com/package/@hapi/joi
-
-### How to use?
-In the npm page is very good explained, and there are some interesting links 
-in internet.
-
-- https://medium.com/@rossbulat/joi-for-node-exploring-javascript-object-schema-validation-50dd4b8e1b0fhttps://medium.com/@rossbulat/joi-for-node-exploring-javascript-object-schema-validation-50dd4b8e1b0f
-- https://scotch.io/tutorials/node-api-schema-validation-with-joi
-- http://zetcode.com/javascript/hapijoi/
-
-
-```js
 //Include joi module.
 const Joi    = require('@hapi/joi');
 const assert = require('assert');
@@ -105,15 +84,6 @@ if (result.error)
   console.log('PET Error',result.error);
 else
   console.log('PET Data',result.value);
-```
-
-### How to use joi to create a type protection layer?
-Take a look of the next code:
-
-```js
-//Include modules.
-const Joi    = require('@hapi/joi');
-const assert = require('assert');
 
 //USE JOI with a function to validate parameters.
 const testFunction = (name,email,age)=>{
@@ -127,4 +97,3 @@ const testFunction = (name,email,age)=>{
 
 //Run function.
 testFunction('susan','aaa@getnada.com',31);
-```
