@@ -50,14 +50,13 @@ findDateT(222222,31,'DDDD');    //error
 ```
 To see the module source code, you and take a look at this file: https://github.com/damiancipolat/Dynamicy-Type-Check-in-js/blob/master/function_parser/functionT.js
 
-  The idea of this code is to create a function parameters parse to make an automatic type check
-  in runtime. The code use the "variable_name" to detect the data type.
+The idea of this code is to create a function parameters parse to make an automatic type check in runtime. The code use the "variable_name" to detect the data type.
 
-  Example:
-    str_name       - validate a string.
-    int_age        - validate a integer.
-    bool_married   - validate a boolean.
-    date_birthdate - validate a js date.
+Example:
+- **str_**name: validate a string.
+- **int_**age: validate a integer.
+- **bool_**married: validate a boolean.
+- **date_**birthdate: validate a js date.
   
   Code:
     function test(str_name,int_age,bool_married,date_birthdate){
